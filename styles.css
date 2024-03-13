@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*font-family: 'League Spartan', sans-serif;*/
+    /*font-family: 'Anonymous Pro', monospace;*/
+  }
+
+ 
+
+
+
+/*Header*/
+   
+.header {
+  top: 10%;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  
+  background-image: url(images/HPBackground.svg);
+background-position: center;
+background-size: 101%;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+
+nav{
+  display: flex;
+  padding: 1% 6%;
+  justify-content: space-between;
+  align-items: top;
+  font-family: 'Oswald', sans-serif;
+}
+
+nav img {
+  position: absolute;
+    top: -30px; 
+    left: 30px;
+    margin: 0 auto;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+ 
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 32px;
+  
+}
+
+.nav-links ul li::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #FFBD59;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.text-box {
+  width: 90%;
+  position: absolute;
+  top: 30%;
+  left: 2%;
+  text-align: left;
+}
+
+.text-box h1 {
+  font-size: 80px;
+  color: #fff;
+  font-family: 'League Spartan', sans-serif;
+}
+
+.text-box p {
+ color: white;
+ font-family: 'Roboto', monospace;
+ border: 1px solid #423D42;
+ background: #423D42;
+ border-radius: 30px;
+ width: 32%;
+ text-align: center;
+ 
+
+}
+
+.HP-btn {
+  display: inline-block;
+  text-decoration: none;
+ color: #FFBD59;
+ 
+  border: 1px solid #FFBD59;
+  padding: 12px 34px;
+  font: 14px;
+  background: transparent;
+  position: relative;
+  font-family: 'Oswald', sans-serif;
+  cursor: pointer;
+  border-radius: 30px;
+
+}
+
+.HP-btn:hover {
+  border: 1px solid #FFBD59;
+  background: #423D42;
+  transition: 1s;
+  
+}
+nav .fa-solid {
+  display: none;
+}
+@media(max-width: 700px) {
+
+  .text-box h1{
+font-size: 50px;
+  }
+
+.nav-links ul li{
+  display: block;
+}
+
+.nav-links {
+  position: absolute;
+  background: #423D42;
+  height: 100vh;
+  width: 200px;
+  top: 0;
+  right: -200px;
+  text-align: left;
+  z-index: 2;
+  transition: 1s;
+}
+nav .fa-solid {
+  display: block;
+  color: #fff;
+  margin: 10px;
+  font-size: 22px;
+  cursor: pointer;
+}
+.nav-links ul {
+  padding: 30px;
+}
+
+.text-box p {
+  width: 80%; /* Adjusted width for mobile */
+  margin: 0; /* Centering the element */
+  margin-bottom: 15px; /* Adding some space between elements */
+}
+
+}
+
+/*About Me*/
+.About {
+  width: 100%;
+  margin: auto;
+  text-align: left;
+  padding-top: 10px;
+  background-color: #FAF2CC;
+  padding-bottom: 0;
+} 
+
+.LeftHalf {
+  width: 50%;
+  position: absolute;
+  left: 0px;
+  height: 100%;
+  background-color: #FAF2CC;
+}
+
+.About p {
+  font-size: 20px;
+  width: 85%;
+  color: black;
+  font-size: 14px;
+  line-height: 22px;
+  padding-left: 2.7rem;
+  padding-top: 2rem;
+  font-family: 'Anonymous Pro', monospace;
+}
+
+.About h1 {
+  font-size: 100px;
+  font-family: 'League Spartan', sans-serif;
+  padding-left: 2.5rem;
+  padding-top: 3.5rem;
+} 
+
+.RightHalf {
+  padding-top: 0;
+  width: 50%;
+  position: absolute;
+  right: 0px;
+  height: 100%;
+  overflow: hidden;
+  background-color: #FAF2CC;
+}
+
+.About img {
+  width: 100%
+}
+
+@media (max-width: 700px) {
+  .About {
+    text-align: center;
+  }
+  
+  .LeftHalf,
+  .RightHalf {
+    width: 100%;
+    position: relative;
+  }
+  
+  .About h1 {
+    font-size: 60px; 
+    padding-left: 0.5rem; 
+    padding-top: 1.5rem; 
+  }
+  
+  .About p {
+    font-size: 16px; 
+    width: 90%; 
+    padding-left: 1.5rem; 
+    padding-top: 1rem; 
+  }
+}
+
+
+/*CONSULTATION*/
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+

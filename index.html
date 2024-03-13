@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Off-Grid Catamarans</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Oswald:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b65ae6ed86.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+
+    <!------HOME PAGE-------->
+    <section class="header">
+      <nav>
+        <img src="images/Logo-cropped.svg" alt="" />
+        <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+        <div class="nav-links" id="navLinks">
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">CONSULTATION</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+      </nav>
+
+      <div class="text-box">
+        <h1>Start Your Own</h1>
+        <h1>Adventure.</h1>
+        <p class="subHeader">
+          <span style="color: #ffbd59">REAL</span> help from someone with
+          <span style="color: #ffbd59">REAL</span> experience.
+        </p>
+        <br />
+        <br />
+        <a href="" class="HP-btn">LEARN MORE</a>
+      </div>
+    </section>
+
+<!--------ABOUT ME--------->
+
+<section class="About">
+  <div class="LeftHalf">
+    <h1><span style="color:#423D42">Randall</span><span style="color: #ffbd59"> Lowe</span></h1>
+  <p>Randall Lowe and his wife Heather sold their house and quit their jobs to pursue a dream of living on the sea <span style="font-weight: bold;">3 years ago</span>. Randall created Off-Grid Catamarans to help others <span style="font-weight: bold;">live this dream</span>. Each sailboat is different with its own unique systems and flaws.</p>
+  <br>
+  <p>On Randall and Heather’s <span style="font-weight: bold;">Youtube Channel</span>, Altared Course, they post their yearlong adventures and challenges during the off-season. If you’re curious about how they have solved their problems from <span style="font-weight: bold;">weather, RV’s, and boat repairs</span>, checking out their channel can offer further proof of their <span style="font-weight: bold;">expertise and problem solving skills</span>. </p>
+  <br>
+  <p>That is why with a <span style="font-weight: bold;">decade of experience</span> installing technical systems, Randall can help walk you through, and create a <span style="font-weight: bold;">tailored plan</span> for your boat. Randall doesn’t just have technical skills, he’s lived the life, knowing the ins and outs of  <span style="font-weight: bold;">what works and what doesn’t</span>.</p>
+  </div>
+  <div class="RightHalf">
+    <img src="images/AboutPicture.jpg" alt="collage photo of Randall and Heather">
+    </div>
+  </section>
+<br>
+<!------Consultation--------->
+
+<section class="Consultation">
+  <h1>Services</h1>
+<img src="" alt="">
+<p>Solar Install and Power Banks</p>
+
+<div class="middleConsultation">
+  <div class="flip-cards">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="" alt="" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <p></p>
+      </div>
+    </div>
+  </div>
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="" alt="" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <p></p>
+    </div>
+  </div>
+</div>
+<div class="flip-card-inner">
+  <div class="flip-card-front">
+    <img src="" alt="" style="width:300px;height:300px;">
+  </div>
+  <div class="flip-card-back">
+    <p></p>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+1
+
+
+
+
+
+
+
+    <!-----JavaScript for Toggle Menu------>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function openMenu() {
+        navLinks.style.right = "0";
+        console.log("ShowMenu");
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
