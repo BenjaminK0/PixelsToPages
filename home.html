@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Off-Grid Catamarans</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Oswald:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b65ae6ed86.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="home">
+
+    <!------HOME PAGE-------->
+    <section class="header1">
+      <nav>
+        <img src="images/Logo-cropped.svg" alt="" />
+        <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+        <div class="nav-links" id="navLinks">
+          <ul>
+            <li><a href="home.html"><span style="color: white;">HOME</span></a></li>
+            <li><a href="about.html"><span style="color: white;">ABOUT</span></a></li>
+            <li><a href="consultation.html"><span style="color: white;">CONSULTATION</span></a></li>
+            <li><a href="contact.html"><span style="color: white;">CONTACT</span></a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+      </nav>
+    </section>
+      <div class="text-box">
+        <h1>Start Your Own</h1>
+        <h1>Adventure.</h1>
+        <p class="subHeader">
+          <span style="color: #ffbd59">REAL</span> help from someone with
+          <span style="color: #ffbd59">REAL</span> experience.
+        </p>
+        <br />
+        <br />
+        <a href="about.html" class="HP-btn">LEARN MORE</a>
+      </div>
+    </section>
+  </section>
+    
+
+
+    <!-----JavaScript for Toggle Menu------>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function openMenu() {
+        navLinks.style.right = "0";
+        console.log("ShowMenu");
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

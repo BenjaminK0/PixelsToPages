@@ -10,19 +10,14 @@
 
 
 /*Header*/
-   
-.header {
+
+.header1 {
+  
   top: 10%;
   min-height: 100vh;
   width: 100%;
   position: relative;
-  
-  background-image: url(images/HPBackground.svg);
-background-position: center;
-background-size: 101%;
-background-repeat: no-repeat;
-background-size: cover;
-position: relative;
+
 }
 
 nav{
@@ -56,10 +51,10 @@ nav img {
   position: relative;
 }
 
-.nav-links ul li a {
-  color: #fff;
+.header1, .nav-links ul li a {
   text-decoration: none;
   font-size: 32px;
+  color: #fff;
   
 }
 
@@ -77,6 +72,16 @@ nav img {
 .nav-links ul li:hover::after {
   width: 100%;
 }
+
+.home {
+  background-image: url("images/HPBackground.svg");
+  background-size: 101%;
+  background-position: center;
+background-size: 101%;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+} 
 
 .text-box {
   width: 90%;
@@ -98,8 +103,9 @@ nav img {
  border: 1px solid #423D42;
  background: #423D42;
  border-radius: 30px;
- width: 32%;
- text-align: center;
+ width: 33%;
+ text-align: left;
+ padding: 0 5px 0 5px;
  
 
 }
@@ -170,12 +176,36 @@ nav .fa-solid {
 }
 
 /*About Me*/
+.about {
+  background-color: #FAF2CC;
+}
+
+.header2 {
+  text-decoration: none;
+  font-size: 32px;
+  top: 10%;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+background-position: center;
+background-size: 101%;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+  
+}
+.header1, .nav-links ul li a {
+  text-decoration: none;
+  font-size: 32px;
+  color: #423D42;
+  
+}
+
 .About {
   width: 100%;
   margin: auto;
   text-align: left;
-  padding-top: 10px;
-  background-color: #FAF2CC;
+  
   padding-bottom: 0;
 } 
 
@@ -184,35 +214,60 @@ nav .fa-solid {
   position: absolute;
   left: 0px;
   height: 100%;
-  background-color: #FAF2CC;
+  
 }
 
 .About p {
   font-size: 20px;
   width: 85%;
   color: black;
-  font-size: 14px;
-  line-height: 22px;
+  font-size: 1rem;
+  line-height: wrem;
   padding-left: 2.7rem;
-  padding-top: 2rem;
-  font-family: 'Anonymous Pro', monospace;
+  padding-top: 1rem;
+  /*font-family: 'Anonymous Pro', monospace;*/
+  font-family: 'Oswald', sans-serif;
+
+}
+
+.LeftHalf a {
+  text-decoration: none;
+  margin-left: 2.3rem;
+ color: #423D42;
+  border: 1px solid #423D42;
+  padding: 6px 34px;
+  font: 14px;
+  background: transparent;
+  position: relative;
+  font-family: 'Oswald', sans-serif;
+  cursor: pointer;
+  border-radius: 30px;
+  background-color: #FAF2CC;
+  
+}
+
+.LeftHalf a:hover {
+  color: #FFBD59;
+  border: 1px solid #FFBD59;
+  background: #423D42;
+  transition: 1s;
 }
 
 .About h1 {
   font-size: 100px;
   font-family: 'League Spartan', sans-serif;
   padding-left: 2.5rem;
-  padding-top: 3.5rem;
+  padding-top: 2.5rem;
 } 
 
 .RightHalf {
-  padding-top: 0;
+  padding-top: 1.5rem;
   width: 50%;
   position: absolute;
   right: 0px;
   height: 100%;
   overflow: hidden;
-  background-color: #FAF2CC;
+  
 }
 
 .About img {
@@ -246,12 +301,104 @@ nav .fa-solid {
 
 
 /*CONSULTATION*/
+.consultation {
+  background-color: #FAF2CC;
+
+}
+
+.consultation h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 6rem;
+  color: #423D42;
+  font-family: 'League Spartan', sans-serif;
+}
+
+ .belowHeader {
+  padding-top: .5rem;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  color:#423D42;
+  letter-spacing: .1rem;
+}
+
+strong {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -0.125rem;
+    left: -0.5rem;
+    right: -0.5rem;
+    height: 0.75rem;
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/664131/underline.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+p > strong {
+  font-weight: 400; 
+
+  &::after {
+    bottom: -0.2rem;
+    height: 0.5rem;
+    left: -0.25rem;
+    right: -0.25rem;
+  }
+}
+
+/*.Titles {
+  display: flex;
+  padding: 1% 6%;
+  justify-content: center;
+  align-items: top;
+}
+  */
+  .Titles {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    
+  }
+  
+  .Titles h2 {
+    margin: 0 5rem 0 2rem; /* Adjust the horizontal spacing */
+    font-family: 'League Spartan', sans-serif;
+    color: #423D42;
+    flex: 1;
+  }
+  
+
+
+/*.consultation h2 {
+  display: inline-block;
+  font-family: 'League Spartan', sans-serif;
+  color: #423D42;
+}
+*/
+.card-container {
+  display: inline-block;
+  text-align: center; /* Center the content horizontally */
+  margin: 1rem .2rem; /* Adjust spacing between cards */
+}
+
+.subtitle {
+  font-family: 'League Spartan', sans-serif;
+  color: #423D42;
+  font-size: 1.5rem;
+}
+
 .flip-card {
   background-color: transparent;
   width: 300px;
-  height: 200px;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  height: 400px;
+  border: .2rem solid #423D42;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */ 
+  margin-left: 2rem;
+  margin: .5rem 5rem; /* Adjust the spacing between cards */
+  flex: 1; /* Distribute the space equally among the cards */
+  max-width: 300px; /* Limit the width of each card */
 }
 
 /* This container is needed to position the front and back side */
@@ -286,9 +433,156 @@ nav .fa-solid {
 
 /* Style the back side */
 .flip-card-back {
-  background-color: dodgerblue;
-  color: white;
+  
+  font-size: 1rem;
+  font-family: 'Oswald', sans-serif;
+  color: #FFBD59;
+  text-align: left;
+  background-color: #423D42;
   transform: rotateY(180deg);
+
+}
+
+.quoteButton {
+  text-decoration: none;
+  margin-left: 38.5rem;
+ color: #423D42;
+  border: 1px solid #423D42;
+  padding: 6px 34px;
+  font: 14px;
+  background: transparent;
+  position: relative;
+  font-family: 'Oswald', sans-serif;
+  cursor: pointer;
+  border-radius: 30px;
+  background-color: #FAF2CC;
+  
+}
+
+ .quoteButton:hover {
+  color: #FFBD59;
+  border: 1px solid #FFBD59;
+  background: #423D42;
+  transition: 1s;
 }
 
 
+/*CONTACT PAGE*/
+
+.contact {
+  background-color: #FAF2CC;
+} 
+
+.contact-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.contact-left-title h2 {
+  font-weight: 600;
+  color: #423D42;
+  font-size: 40px;
+  margin-bottom: 5px;
+  font-family: 'League Spartan', sans-serif;
+}
+
+.contact-left-title hr {
+  border: none;
+  width: 120px;
+  height: 5px;
+  background-color: #423D42;
+  border-radius: 10px;
+  margin-bottom: 20px;
+
+}
+
+
+.contact-inputs {
+  width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 500;
+  color: #FFBD59;
+  border-radius: 50px;
+  background-color: #423D42;
+  font-family: 'League Spartan', sans-serif;
+}
+
+.special-input {
+  width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 500;
+  color: #423D42;
+  border-radius: 50px;
+  background-color: #FFBD59;
+  font-family: 'League Spartan', sans-serif;
+}
+
+.contact-left textarea {
+  height: 140px;
+  padding-top: 15px;
+  border-radius: 20px;
+
+}
+
+.contact-inputs:focus {
+  border: 2px solid #FFBD59;
+}
+
+.special-input {
+  border: 2px solid #423D42;
+}
+
+.contact-inputs::placeholder {
+  color: #FFBD59;
+}
+
+.special-input::placeholder {
+  color:#423D42;
+}
+
+.contact-left button {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: #FFBD59;
+  gap: 10px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: 'League Spartan', sans-serif;
+  background: #423D42;
+}
+
+
+.contact-left button i {
+  height: 15px;
+}
+
+@media (max-width:700px) {
+.contact-inputs {
+  width: 80vw;
+}
+.contact-right {
+  display: none;
+}
+
+
+
+}

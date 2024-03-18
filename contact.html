@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Off-Grid Catamarans</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Oswald:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b65ae6ed86.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="contact">
+    <section class="header">
+      <nav>
+        <img src="images/DarkLogo.png" alt="" />
+        <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+        <div class="nav-links" id="navLinks">
+          <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="consultation.html">CONSULTATION</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+      </nav>
+<div class="contact-container">
+  <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+<div class="contact-left-title">
+  <h2>Get a Free Quote</h2>
+  <hr>
+</div>
+<input type="hidden" name="access_key" value="ca9531df-30ec-4a3c-b5f2-c42d3d83ed91">
+<input type="text" name="name" placeholder="Your Name" class="special-input"required>
+<input type="text" name="email" placeholder="Your Email" class="contact-inputs" required>
+<textarea name="message" placeholder="Your Message" class="contact-inputs"></textarea>
+<button type="submit">Submit <i class="fa-solid fa-arrow-right"></i></button>
+</form>
+  <div class="contact-right"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</body>
+</html>
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function openMenu() {
+      navLinks.style.right = "0";
+      console.log("ShowMenu");
+    }
+
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+  </script>

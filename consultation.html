@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Off-Grid Catamarans</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Oswald:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b65ae6ed86.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="consultation">
+    <section class="header2">
+      <nav>
+        <img src="images/DarkLogo.png" alt="" />
+        <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+        <div class="nav-links" id="navLinks">
+          <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="consultation.html">CONSULTATION</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+      </nav>
+        <h1><strong>Services</strong></h1>
+      <p class="belowHeader">Solar Install and Power Banks</p> 
+     
+<!------Flip Cards--------->
+<div class="card-container">
+  <h2 class="subtitle">Total Cost</h2>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="images/receipt.png" alt="Avatar" style="width:300px;height:400px;">
+      </div>
+      <div class="flip-card-back">
+       <p>Randall will begin by conducting a comprehensive consultation tailored to your sailboat's unique energy needs. He will meticulously assess factors such as your vessel's size, energy consumption patterns, and desired solar capacity. Utilizing advanced tools and industry expertise, he calculates the most efficient solar configuration for your specific requirements. His transparent pricing model ensures that you're informed every step of the way, as we break down the costs involved, including equipment, installation labor, and any additional services.
+      </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card-container">
+  <h2 class="subtitle">Off-Grid Systems</h2>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="images/solarpanel.png" alt="Avatar" style="width:300px;height:400px;">
+      </div>
+      <div class="flip-card-back">
+        <p>Randall understands that every sailor's journey is unique, which is why he offers a diverse range of off-grid systems to suit various needs and preferences. During your consultation, he will guide you through the array of off-grid systems available, discussing the advantages and limitations of each. Whether you're seeking a compact and portable solution for weekend getaways or a robust system capable of powering extended expeditions, he has options tailored to your requirements. From flexible solar panels designed to conform to the curvature of your sailboat to rugged solar arrays built to withstand harsh marine environments, he’ll help you explore the possibilities and make informed decisions.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card-container">
+  <h2 class="subtitle">Installation</h2>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="images/wiring.png" alt="Avatar" style="width:300px;height:400px;">
+      </div>
+      <div class="flip-card-back">
+        <p>Randall brings years of experience and precision to every project, ensuring that your sailboat's solar solution is expertly integrated for optimal performance. From mounting solar panels to configuring electrical connections, he will walk you through every aspect of the installation process with meticulous attention to detail. Moreover, he understands that some sailors may prefer personalized assistance during the installation phase. That's why he offers the unique option to fly out and provide hands-on support for an additional cost. With Randall's expertise by your side, you can rest assured that your solar system will be installed efficiently and effectively, tailored to your vessel's specifications and ready to power your adventures on the open seas.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<a href="contact.html" class="quoteButton">Free Quote</a>
+
+    </body>
+    </html>
+    
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function openMenu() {
+          navLinks.style.right = "0";
+          console.log("ShowMenu");
+        }
+    
+        function hideMenu() {
+          navLinks.style.right = "-200px";
+        }
+      </script>
