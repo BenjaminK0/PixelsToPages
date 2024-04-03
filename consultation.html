@@ -26,16 +26,16 @@
     <section class="header2">
       <nav>
         <img src="images/DarkLogo.png" alt="" />
-        <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+       
         <div class="nav-links" id="navLinks">
           <ul>
             <li><a href="home.html">HOME</a></li>
             <li><a href="about.html">ABOUT</a></li>
-            <li><a href="consultation.html">CONSULTATION</a></li>
+            <li><a href="consultation.html">SERVICES</a></li>
             <li><a href="contact.html">CONTACT</a></li>
           </ul>
         </div>
-        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+       
       </nav>
         <h1><strong>Services</strong></h1>
       <p class="belowHeader">Solar Install and Power Banks</p> 
@@ -92,14 +92,4 @@
     
 
 
-    <script>
-        var navLinks = document.getElementById("navLinks");
-        function openMenu() {
-          navLinks.style.right = "0";
-          console.log("ShowMenu");
-        }
     
-        function hideMenu() {
-          navLinks.style.right = "-200px";
-        }
-      </script>

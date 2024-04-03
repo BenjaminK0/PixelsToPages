@@ -28,17 +28,16 @@
     <section class="header1">
       <nav>
         <img src="images/Logo-cropped.svg" alt="" />
-        <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
         <div class="nav-links" id="navLinks">
           <ul>
             <li><a href="home.html"><span style="color: white;">HOME</span></a></li>
             <li><a href="about.html"><span style="color: white;">ABOUT</span></a></li>
-            <li><a href="consultation.html"><span style="color: white;">CONSULTATION</span></a></li>
+            <li><a href="consultation.html"><span style="color: white;">SERVICES</span></a></li>
             <li><a href="contact.html"><span style="color: white;">CONTACT</span></a></li>
           </ul>
         </div>
-        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
       </nav>
+
     </section>
       <div class="text-box">
         <h1>Start Your Own</h1>
@@ -57,16 +56,6 @@
 
 
     <!-----JavaScript for Toggle Menu------>
-    <script>
-      var navLinks = document.getElementById("navLinks");
-      function openMenu() {
-        navLinks.style.right = "0";
-        console.log("ShowMenu");
-      }
-
-      function hideMenu() {
-        navLinks.style.right = "-200px";
-      }
-    </script>
+   
   </body>
 </html>

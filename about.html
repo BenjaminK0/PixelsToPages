@@ -26,20 +26,19 @@
     <section class="header2">
       <nav>
         <img src="images/DarkLogo.png" alt="" />
-        <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
         <div class="nav-links" id="navLinks">
           <ul>
             <li><a href="home.html">HOME</a></li>
             <li><a href="about.html">ABOUT</a></li>
-            <li><a href="consultation.html">CONSULTATION</a></li>
+            <li><a href="consultation.html">SERVICES</a></li>
             <li><a href="contact.html">CONTACT</a></li>
           </ul>
         </div>
-        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+    
       </nav>
       <section class="About">
         <div class="LeftHalf">
-          <h1><span style="color:#423D42">Randall</span><span style="color: #ffbd59"> Lowe</span></h1>
+          <h1><span style="color:#423D42">Randall</span><span style="color: #FFAA00"> Lowe</span></h1>
         <p>Randall Lowe and his wife Heather sold their house and quit their jobs to pursue a dream of living on the sea <span style="font-weight: bold;">3 years ago</span>. Randall created Off-Grid Catamarans to help others <span style="font-weight: bold;">live this dream</span>. Each sailboat is different with its own unique systems and flaws.</p>
         <br>
         <p>On Randall and Heather’s <span style="font-weight: bold;">Youtube Channel</span>, Altared Course, they post their yearlong adventures and challenges during the off-season. If you’re curious about how they have solved their problems from <span style="font-weight: bold;">weather, RV’s, and boat repairs</span>, checking out their channel can offer further proof of their <span style="font-weight: bold;">expertise and problem solving skills</span>. </p>
@@ -53,18 +52,34 @@
           <img src="images/AboutPicture.jpg" alt="collage photo of Randall and Heather">
           </div>
         </section>
-    
+    <br>
+<section class="About2" id="flex">
+  <div class="YT-Video" id="a">
+    <iframe src="https://www.youtube.com/embed/vc_5_jNLzHs?si=C8JNYGEr6xqkSRx7?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+  </div>
+<div class="YT-Label">
+  
+  <h2>Our Latest <span style="color: #FFAA00;">Video</span></h2>
+  <a href="https://www.youtube.com/@AltaredCourse">Watch Full Video</a>
+</div>
+</section>
+
+<section class="About3">
+<h3>Work <span style="color: #FFAA00;">Experience</span></h3>
+<div class="LinkedIn">
+  <img src="images/Linkedin.png" alt="linkedinlogo">
+</div>
+<div class="Skills">
+<ul>
+  <li>Sales <span style="color: #FFAA00;">Manager</span> at Samsung</li>
+  <li>Relationship <span style="color: #FFAA00;">Manager</span> at First Tennessee Bank</li>
+  <li><span style="color: #FFAA00;">President</span> at InVision Systems Inc.</li>
+  <li><span style="color: #FFAA00;">Owner,</span> Design Consultant at Elevate Tech.</li>
+</ul>
+<a href="https://www.linkedin.com/in/randallknows">Connect on LinkedIn</a>
+</div>
+</section>
+
+
  </body>
 </html>
-
-<script>
-    var navLinks = document.getElementById("navLinks");
-    function openMenu() {
-      navLinks.style.right = "0";
-      console.log("ShowMenu");
-    }
-
-    function hideMenu() {
-      navLinks.style.right = "-200px";
-    }
-  </script>
